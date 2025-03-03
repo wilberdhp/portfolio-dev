@@ -12,7 +12,6 @@ interface Props {
 	metaKeywords: string
 	metaOGTitle: string
 	metaOGDescription: string
-	metaOGImage: string
 	metaOGUrl: string
 	metaTTitle: string
 	metaTDescription: string
@@ -44,7 +43,6 @@ const {
 	metaKeywords, 
 	metaOGTitle,
 	metaOGDescription,
-	metaOGImage,
 	metaOGUrl,
 	metaTTitle,
 	metaTDescription,
@@ -68,7 +66,7 @@ const {
 		<!-- Open Graph -->
 		<meta property="og:title" content={metaOGTitle}>
 		<meta property="og:description" content={metaOGDescription}>
-		<meta property="og:image" content={metaOGImage}>
+		<meta property="og:image" content="https://wilberdhp-portfolio.netlify.app/projects-images/porfolio.png">
 		<meta property="og:url" content={metaOGUrl}>
 		<meta property="og:type" content="website">
 
@@ -76,7 +74,7 @@ const {
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content={metaTTitle}>
 		<meta name="twitter:description" content={metaTDescription}>
-		<meta name="twitter:image" content={metaOGImage}>
+		<meta name="twitter:image" content="https://wilberdhp-portfolio.netlify.app/projects-images/porfolio.png">
 		<meta name="twitter:site" content="@wilberdhp">
 
 		<link rel="canonical" href="https://wilberdhp-portfolio.netlify.app">
