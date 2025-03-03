@@ -163,7 +163,7 @@
     "hero": {
       "subtitle": "Desarrollador Frontend",
       "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
-      "curriculum": "./cv-es/Wilber-Hernández-Resume.pdf"
+      "curriculum": "../cv-es/Wilber-Hernández-Resume.pdf"
     },
     "aboutMe": {
       "initialText": "Conozca más",
@@ -191,16 +191,16 @@
       "container": [
         {
           "title": "Galería",
-          "image": "./projects-images/galeria.png", 
+          "image": "../projects-images/galeria.png", 
           "technologies": [
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "../icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "./icons/bootstrap.svg",
+              "icon": "../icons/bootstrap.svg",
               "name": "Bootstrap"
             }
           ],
@@ -210,16 +210,16 @@
         },
         {
           "title": "Generador de contraseñas",
-          "image": "./projects-images/generador-contrasenas.png",
+          "image": "../projects-images/generador-contrasenas.png",
           "technologies": [
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "../icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "./icons/bootstrap.svg",
+              "icon": "../icons/bootstrap.svg",
               "name": "Bootstrap"
             }
           ],
@@ -229,40 +229,40 @@
         },
         {
           "title": "Portafolio",
-          "image": "./projects-images/porfolio.png",
+          "image": "../projects-images/porfolio.png",
           "technologies": [
             {
               "style": "astro",
-              "icon": "./icons/Astro_dark.svg",
+              "icon": "../icons/Astro_dark.svg",
               "name": "Astro"
             },
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "../icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "./icons/bootstrap.svg",
+              "icon": "../icons/bootstrap.svg",
               "name": "Bootstrap"
             },
             {
               "style": "tailwind",
-              "icon": "./icons/tailwindcss.svg",
+              "icon": "../icons/tailwindcss.svg",
               "name": "Tailwind CSS"
             }
           ],
           "description": "Mi portafolio web.",
-          "github": "",
-          "live": ""
+          "github": "https://github.com/wilberdhp/portfolio-dev",
+          "live": "https://wilberdhp-portfolio.netlify.app"
         },
         {
           "title": "Tic tac toe",
-          "image": "./projects-images/tic-tac-toe.png",
+          "image": "../projects-images/tic-tac-toe.png",
           "technologies": [
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "../icons/react.svg",
               "name": "React"
             },
             {

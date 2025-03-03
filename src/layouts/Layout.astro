@@ -8,6 +8,14 @@ import '../styles/variables.css';
 interface Props {
 	lang: string
 	title: string
+	metaDescription: string
+	metaKeywords: string
+	metaOGTitle: string
+	metaOGDescription: string
+	metaOGImage: string
+	metaOGUrl: string
+	metaTTitle: string
+	metaTDescription: string
 	header: {
 		about: string
 		projects: string
@@ -29,7 +37,20 @@ interface Props {
 	}
 }
 
-const { lang, title, header, footer } = Astro.props;
+const { 
+	lang, 
+	title, 
+	metaDescription, 
+	metaKeywords, 
+	metaOGTitle,
+	metaOGDescription,
+	metaOGImage,
+	metaOGUrl,
+	metaTTitle,
+	metaTDescription,
+	header, 
+	footer 
+} = Astro.props;
 ---
 
 
@@ -39,15 +60,28 @@ const { lang, title, header, footer } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="author" content="Wilber Hernández">
-		<meta name="description" content="Desarrollador web junior con experiencia en HTML, CSS, JavaScript, Astro, React y más. Explora mi portafolio y proyectos.">
-		<meta name="keywords" content="desarrollador web, frontend, backend, Astro, React, JavaScript, Node.js, TypeScript, portafolio">
+		<meta name="description" content={metaDescription}>
+		<meta name="keywords" content={metaKeywords}>
 		<meta name="robots" content="index, follow">
+		<meta name="theme-color" content="#ffffff" id="theme-color-meta">
 
-		<meta property="og:title" content="Wilber Hernández - Desarrollador Web">
-		<meta property="og:description" content="Desarrollador web especializado en Astro, React y más. Descubre mis proyectos.">
-		<meta property="og:image" content="URL_de_tu_imagen">
-		<meta property="og:url" content="https://tudominio.com">
+		<!-- Open Graph -->
+		<meta property="og:title" content={metaOGTitle}>
+		<meta property="og:description" content={metaOGDescription}>
+		<meta property="og:image" content={metaOGImage}>
+		<meta property="og:url" content={metaOGUrl}>
 		<meta property="og:type" content="website">
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content={metaTTitle}>
+		<meta name="twitter:description" content={metaTDescription}>
+		<meta name="twitter:image" content={metaOGImage}>
+		<meta name="twitter:site" content="@wilberdhp">
+
+		<link rel="canonical" href="https://wilberdhp-portfolio.netlify.app">
+		<link rel="alternate" hreflang="es" href="https://wilberdhp-portfolio.netlify.app/espanol/">
+		<link rel="alternate" hreflang="en" href="https://wilberdhp-portfolio.netlify.app">
 
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -108,3 +142,16 @@ const { lang, title, header, footer } = Astro.props;
   }
 
 </style>
+
+<script is:inline>
+	const themeColorMeta = document.getElementById("theme-color-meta")
+	const theme = document.body.getAttribute("data-theme")
+	const themeSystem = window.matchMedia("(prefers-color-scheme: dark)")
+
+	if (themeSystem.matches && theme === "dark") {
+		themeColorMeta.setAttribute("content", "#000000");
+	} else if (theme === "light") {
+		themeColorMeta.setAttribute("content", "#ffffff");
+	}
+
+</script>

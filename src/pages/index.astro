@@ -11,7 +11,20 @@ const { header, hero, aboutMe, projects, contact, footer } = english;
 
 ---
 
-<Layout lang='en' title='Wilber Hernández Portfolio | Web Developer and Programmer' header={header} footer={footer}>
+<Layout 
+	lang='en' 
+	title='Wilber Hernández Portfolio | Web Developer and Programmer' 
+	metaDescription='Junior web developer with experience in HTML, CSS, JavaScript, React, Astro, and more. Explore my portfolio and projects.'
+	metaKeywords='web developer, frontend, backend, React, Astro, JavaScript, Node.js, TypeScript, portfolio'
+	metaOGTitle='Wilber Hernández - Web Developer'
+	metaOGDescription='Web developer specialized in React, Astro and more. Discover my projects.'
+	metaOGImage='https://wilberdhp-portfolio.netlify.app/projects-images/porfolio.png'
+	metaOGUrl='https://wilberdhp-portfolio.netlify.app'
+	metaTTitle='Wilber Hernández - Web Developer'
+	metaTDescription='Web developer specialized in React, Astro and more. Discover my projects.'
+	header={header} footer={footer}
+	
+	>
 	<Hero hero={hero}/>
 	<About aboutMe={aboutMe}/>
 	<Projects projects={projects} />
