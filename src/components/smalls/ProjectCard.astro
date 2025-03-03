@@ -1,0 +1,87 @@
+---
+interface Props {
+  image: string
+  title: string
+  codeUrl: string
+  liveUrl: string
+}
+
+const { image, title, codeUrl, liveUrl } = Astro.props
+---
+
+
+
+  <div class="project-card">
+    <img class="project-img" src={image} alt={title}>
+    <h3>{title}</h3>
+    <div class="technology-container">
+      <slot />
+    </div>
+    
+    <div class="btn-container">
+      <a class="btn" href={codeUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Live</a>
+    </div>
+  </div>
+
+<style>
+  .project-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    min-height: 300px;
+    border: var(--border-projects);
+
+    background: var(--box-background);
+    border-radius: 20px;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .project-img {
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .technology-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-container {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    font-weight: bold;
+    padding: 10px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 100vmax;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    border: none;
+    transform: scale(1.12);
+    background-color: rgba(0, 0, 0, 0.584);
+    color: white;
+  }
+
+  .btn:active {
+    transform: translateY(2px);
+  }
+</style>

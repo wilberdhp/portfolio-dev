@@ -1,0 +1,167 @@
+---
+interface Props {
+  contact: {
+    initialText: string
+    title: string
+  }
+}
+
+const { contact } = Astro.props;
+const { initialText, title } = contact;
+
+---
+
+
+<section id="contact">
+  <p class="section-text-paragraph">{initialText}</p>
+  <h1 class="section-title">{title}</h1>
+  
+  <div class="contact-container">
+    <div class="social-media-container">      
+      <a class="social-media" href="mailto:wilberdhp.dev@gmail.com">
+        <i class="bi bi-envelope-check-fill"></i>
+        wilberdhp.dev@gmail.com
+      </a>
+    </div>
+    <div class="social-media-container">
+      <a class="social-media" href="https://www.linkedin.com/in/wilberdhp" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    /* height: fit-content; */
+    padding-top: 70px;
+		padding-bottom: 30px;
+  }
+
+  .contact-container {
+    padding: 3px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .social-media-container {
+    margin: 12px;
+  }
+
+  .social-media {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    vertical-align: middle;
+  }
+
+  .social-media:hover {
+    color: var(--footer-hover-color);
+  }
+
+  .social-media i {
+    font-size: 30px;
+  }
+
+  .btn {
+    cursor: pointer;
+    background-color: #0987f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition:
+      box-shadow 200ms ease-in-out,
+      transform 200ms ease-in-out;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+
+  .btn:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .social-media {
+    animation-name: social-media-animation;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  /* Animations */
+
+  @keyframes social-media-animation {
+    from {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+  /* Media Query's */
+
+  @media (width <= 500px) {
+    .social-media-container {
+      margin: 10px;
+    }
+
+    .social-media {
+      font-size: 20px;
+    }
+
+    .social-media i {
+      font-size: 30px;
+    }
+  }
+
+  @media (width <= 320px) {
+
+
+    .social-media {
+      font-size: 17px;
+    }
+
+    .social-media i {
+      font-size: 25px;
+    }
+  }
+
+</style>

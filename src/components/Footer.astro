@@ -1,0 +1,32 @@
+---
+interface Props {
+  footer: {
+    text: string
+  }
+}
+
+const { footer } = Astro.props;
+
+const { text } = footer
+
+const date = new Date;
+const year = date.getFullYear();
+---
+
+
+
+<footer>
+  <p>Copyright © {year} Wilber Hernández. {text}</p>
+</footer>
+
+<style>
+  footer {
+    margin: 10px;
+    height: 80px;
+  }
+  p {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    color: var(--footer-text-color);
+  }
+</style>

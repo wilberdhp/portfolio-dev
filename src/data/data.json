@@ -1,0 +1,291 @@
+{
+  "english": {
+    "header": {
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact",
+      "modo": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System",
+        "search": "Choose the theme"
+      },
+      "language": {
+        "english": "English",
+        "spanish": "Spanish",
+        "search": "Choose the language"
+      }
+    },
+    "hero": {
+      "subtitle": "Frontend Developer",
+      "resumen": "I like to program and create innovative and efficient solutions through web development.",
+      "curriculum": "./cv-en/Wilber-Hernández-Resume.pdf"
+    },
+    "aboutMe": {
+      "initialText": "Get To Know More",
+      "title": "About Me",
+      "container": {
+        "IAm": {
+          "title": "I am",
+          "paragraph1": "I am a web developer specialized in frontend development. I enjoy innovating and learning new things.",
+          "paragraph2": "I am constantly learning and updating my knowledge about web development."
+        },
+        "education": {
+          "title": "Education",
+          "paragraph1": "I learned web development self-taught through freeCodeCamp and YouTube courses from freeCodeCamp Español, HolaMundo, and midudev.",
+          "paragraph2": "Currently, I am in my second year of Informatics Engineering at the University of Camagüey \"Ignacio Agramonte Loynaz\" (UCIAL), where I have learned Python and Java."
+        },
+        "skills": {
+          "title": "Skills",
+          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS", "React", "Astro", "Node.js", "Express", "MySQL", "Git", "ChatGPT"] 
+        }
+      }
+    },
+    "projects": {
+      "initialText": "Browse My",
+      "title": "Projects",
+      "container": [
+        {
+          "title": "Gallery",
+          "image": "./projects-images/galeria.png", 
+          "technologies": [
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "style": "bootstrap",
+              "icon": "./icons/bootstrap.svg",
+              "name": "Bootstrap"
+            }
+          ],
+          "description": "An image gallery. The images can be filtered by category. Clicking on an image opens a modal window with a description of the image.",
+          "github": "https://github.com/wilberdhp/galeria-react",
+          "live": "https://taupe-gaufre-cd3587.netlify.app"
+        },
+        {
+          "title": "Password Generator",
+          "image": "./projects-images/generador-contrasenas.png",
+          "technologies": [
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "style": "bootstrap",
+              "icon": "./icons/bootstrap.svg",
+              "name": "Bootstrap"
+            }
+          ],
+          "description": "A secure password generator. It creates strong passwords that provide greater security for your accounts.",
+          "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
+          "live": "https://generador-contrasenas-seguras.netlify.app"
+        },
+        {
+          "title": "Portfolio",
+          "image": "./projects-images/porfolio.png",
+          "technologies": [
+            {
+              "style": "astro",
+              "icon": "./icons/Astro_dark.svg",
+              "name": "Astro"
+            },
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "style": "bootstrap",
+              "icon": "./icons/bootstrap.svg",
+              "name": "Bootstrap"
+            },
+            {
+              "style": "tailwind",
+              "icon": "./icons/tailwindcss.svg",
+              "name": "Tailwind CSS"
+            }
+          ],
+          "description": "My web portfolio.",
+          "github": "",
+          "live": ""
+        },
+        {
+          "title": "Tic tac toe",
+          "image": "./projects-images/tic-tac-toe.png",
+          "technologies": [
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "reference": "midudev",
+              "href": "https://www.youtube.com/@midudev",
+              "name": "midudev"
+            }
+          ],
+          "description": "Dynamic and fun game. In the React course by midudev, I learned how to make it, and then I did it on my own and updated it.",
+          "github": "https://github.com/wilberdhp/tic-tac-toe",
+          "live": "https://ubiquitous-bienenstitch-499766.netlify.app"
+        }
+      ],
+      "btnMore": "More projects",
+      "btnLess": "Less projects"
+    },
+    "contact": {
+      "initialText": "Get in Touch",
+      "title": "Contact Me"
+    },
+    "footer": {
+      "text": "Almost all rights reserved."
+    }
+  },
+  "espanol": {
+    "header": {
+      "about": "Sobre Mí",
+      "projects": "Proyectos",
+      "contact": "Contacto",
+      "modo": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema",
+        "search": "Elige el tema" 
+      },
+      "language": {
+        "english": "Inglés",
+        "spanish": "Español",
+        "search": "Elige el idioma" 
+      }
+    },
+    "hero": {
+      "subtitle": "Desarrollador Frontend",
+      "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
+      "curriculum": "./cv-es/Wilber-Hernández-Resume.pdf"
+    },
+    "aboutMe": {
+      "initialText": "Conozca más",
+      "title": "Sobre Mí",
+      "container": {
+        "IAm": {
+          "title": "Yo soy",
+          "paragraph1": "Soy un desarrollador web especializado en desarrollo frontend. Me gusta innovar y aprender cosas nuevas.",
+          "paragraph2": "Constantemente estoy aprendiendo y actualizando mis conocimientos sobre desarrollo web."
+        },
+        "education": {
+          "title": "Educación",
+          "paragraph1": "Aprendí desarrollo web de forma autodidacta a través de freeCodeCamp y cursos en YouTube de freeCodeCamp Español, HolaMundo y midudev.",
+          "paragraph2": "Actualmente estoy en segundo año de Ingeniería Informática en la Universidad de Camagüey \"Ignacio Agramonte Loynaz\" (UCIAL), donde he aprendido Python y Java."
+        },
+        "skills": {
+          "title": "Habilidades",
+          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS", "React", "Astro", "Node.js", "Express", "MySQL", "Git", "ChatGPT"] 
+        }
+      }
+    },
+    "projects": {
+      "initialText": "Explora mis",
+      "title": "Proyectos",
+      "container": [
+        {
+          "title": "Galería",
+          "image": "./projects-images/galeria.png", 
+          "technologies": [
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "style": "bootstrap",
+              "icon": "./icons/bootstrap.svg",
+              "name": "Bootstrap"
+            }
+          ],
+          "description": "Una galería de imágenes. Las imagenes se pueden filtrar por categoría. Al hacer clic en alguna imagen se abre una ventana modal con una descripción de la imagen.",
+          "github": "https://github.com/wilberdhp/galeria-react",
+          "live": "https://taupe-gaufre-cd3587.netlify.app"
+        },
+        {
+          "title": "Generador de contraseñas",
+          "image": "./projects-images/generador-contrasenas.png",
+          "technologies": [
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "style": "bootstrap",
+              "icon": "./icons/bootstrap.svg",
+              "name": "Bootstrap"
+            }
+          ],
+          "description": "Un generador de contraseñas seguras. Crea contraseñas robustas que dan mayor seguridad a tus cuentas.",
+          "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
+          "live": "https://generador-contrasenas-seguras.netlify.app"
+        },
+        {
+          "title": "Portafolio",
+          "image": "./projects-images/porfolio.png",
+          "technologies": [
+            {
+              "style": "astro",
+              "icon": "./icons/Astro_dark.svg",
+              "name": "Astro"
+            },
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "style": "bootstrap",
+              "icon": "./icons/bootstrap.svg",
+              "name": "Bootstrap"
+            },
+            {
+              "style": "tailwind",
+              "icon": "./icons/tailwindcss.svg",
+              "name": "Tailwind CSS"
+            }
+          ],
+          "description": "Mi portafolio web.",
+          "github": "",
+          "live": ""
+        },
+        {
+          "title": "Tic tac toe",
+          "image": "./projects-images/tic-tac-toe.png",
+          "technologies": [
+            {
+              "style": "react",
+              "icon": "./icons/react.svg",
+              "name": "React"
+            },
+            {
+              "reference": "midudev",
+              "href": "https://www.youtube.com/@midudev",
+              "name": "midudev"
+            }
+          ],
+          "description": "Juego dinámico y divertido. En el curso de React de midudev aprendí como hacerlo y luego lo hice por mi propia cuenta y lo actualicé.",
+          "github": "https://github.com/wilberdhp/tic-tac-toe",
+          "live": "https://ubiquitous-bienenstitch-499766.netlify.app"
+        }
+      ],
+      "btnMore": "Más proyectos",
+      "btnLess": "Menos proyectos"
+    },
+    "contact": {
+      "initialText": "Ponte en Contacto",
+      "title": "Contáctame"
+    },
+    "footer": {
+      "text": "Casi todos los Derechos Reservados."
+    }
+  }
+}
+
