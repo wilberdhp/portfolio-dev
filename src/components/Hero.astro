@@ -3,6 +3,7 @@ import HeroImage from '../../public/cartoon-img-2 - copia.jpeg';
 
 interface Props {
   hero: {
+    image?: string,
     subtitle: string
     resumen: string
     curriculum: string
@@ -11,14 +12,14 @@ interface Props {
 
 const { hero } = Astro.props;
 
-const { subtitle, resumen, curriculum } = hero;
+const { image, subtitle, resumen, curriculum } = hero;
 
 ---
 
 
 <section id="hero">
   <div class="container-img">
-    <img src="./hero-image.jpeg" alt="Wilber Hernández" />
+    <img src={ image || "./hero-image.jpeg"} alt="Wilber Hernández" />
   </div>
 
   <div class="contenedor">

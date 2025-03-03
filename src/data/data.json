@@ -161,6 +161,7 @@
       }
     },
     "hero": {
+      "image": "../hero-image.jpeg",
       "subtitle": "Desarrollador Frontend",
       "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
       "curriculum": "../cv-es/Wilber-Hernández-Resume.pdf"
