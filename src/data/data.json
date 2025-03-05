@@ -19,7 +19,7 @@
     "hero": {
       "subtitle": "Frontend Developer",
       "resumen": "I like to program and create innovative and efficient solutions through web development.",
-      "curriculum": "./cv-en/Wilber-Hernández-Resume.pdf"
+      "curriculum": "./CV/cv-en/Wilber-Hernández-Resume.pdf"
     },
     "aboutMe": {
       "initialText": "Get To Know More",
@@ -47,16 +47,16 @@
       "container": [
         {
           "title": "Gallery",
-          "image": "./projects-images/galeria.png", 
+          "image": "./images/projects-images/galeria.webp", 
           "technologies": [
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "./images/icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "./icons/bootstrap.svg",
+              "icon": "./images/icons/bootstrap.svg",
               "name": "Bootstrap"
             }
           ],
@@ -66,16 +66,16 @@
         },
         {
           "title": "Password Generator",
-          "image": "./projects-images/generador-contrasenas.png",
+          "image": "./images/projects-images/generador-contrasenas.webp",
           "technologies": [
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "./images/icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "./icons/bootstrap.svg",
+              "icon": "./images/icons/bootstrap.svg",
               "name": "Bootstrap"
             }
           ],
@@ -85,40 +85,40 @@
         },
         {
           "title": "Portfolio",
-          "image": "./projects-images/porfolio.png",
+          "image": "./images/projects-images/porfolio.webp",
           "technologies": [
             {
               "style": "astro",
-              "icon": "./icons/Astro_dark.svg",
+              "icon": "./images/icons/Astro_dark.svg",
               "name": "Astro"
             },
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "./images/icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "./icons/bootstrap.svg",
+              "icon": "./images/icons/bootstrap.svg",
               "name": "Bootstrap"
             },
             {
               "style": "tailwind",
-              "icon": "./icons/tailwindcss.svg",
+              "icon": "./images/icons/tailwindcss.svg",
               "name": "Tailwind CSS"
             }
           ],
           "description": "My web portfolio.",
-          "github": "",
-          "live": ""
+          "github": "https://github.com/wilberdhp/portfolio-dev",
+          "live": "https://wilberdhp-portfolio.netlify.app"
         },
         {
           "title": "Tic tac toe",
-          "image": "./projects-images/tic-tac-toe.png",
+          "image": "./images/projects-images/tic-tac-toe.webp",
           "technologies": [
             {
               "style": "react",
-              "icon": "./icons/react.svg",
+              "icon": "./images/icons/react.svg",
               "name": "React"
             },
             {
@@ -161,10 +161,10 @@
       }
     },
     "hero": {
-      "image": "../hero-image.jpeg",
+      "image": "../images/hero-image.webp",
       "subtitle": "Desarrollador Frontend",
       "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
-      "curriculum": "../cv-es/Wilber-Hernández-Resume.pdf"
+      "curriculum": "../CV/cv-es/Wilber-Hernández-Resume.pdf"
     },
     "aboutMe": {
       "initialText": "Conozca más",
@@ -192,16 +192,16 @@
       "container": [
         {
           "title": "Galería",
-          "image": "../projects-images/galeria.png", 
+          "image": "../images/projects-images/galeria.webp", 
           "technologies": [
             {
               "style": "react",
-              "icon": "../icons/react.svg",
+              "icon": "../images/icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "../icons/bootstrap.svg",
+              "icon": "../images/icons/bootstrap.svg",
               "name": "Bootstrap"
             }
           ],
@@ -211,16 +211,16 @@
         },
         {
           "title": "Generador de contraseñas",
-          "image": "../projects-images/generador-contrasenas.png",
+          "image": "../images/projects-images/generador-contrasenas.webp",
           "technologies": [
             {
               "style": "react",
-              "icon": "../icons/react.svg",
+              "icon": "../images/icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "../icons/bootstrap.svg",
+              "icon": "../images/icons/bootstrap.svg",
               "name": "Bootstrap"
             }
           ],
@@ -230,26 +230,26 @@
         },
         {
           "title": "Portafolio",
-          "image": "../projects-images/porfolio.png",
+          "image": "../images/projects-images/porfolio.webp",
           "technologies": [
             {
               "style": "astro",
-              "icon": "../icons/Astro_dark.svg",
+              "icon": "../images/icons/Astro_dark.svg",
               "name": "Astro"
             },
             {
               "style": "react",
-              "icon": "../icons/react.svg",
+              "icon": "../images/icons/react.svg",
               "name": "React"
             },
             {
               "style": "bootstrap",
-              "icon": "../icons/bootstrap.svg",
+              "icon": "../images/icons/bootstrap.svg",
               "name": "Bootstrap"
             },
             {
               "style": "tailwind",
-              "icon": "../icons/tailwindcss.svg",
+              "icon": "../images/icons/tailwindcss.svg",
               "name": "Tailwind CSS"
             }
           ],
@@ -259,11 +259,11 @@
         },
         {
           "title": "Tic tac toe",
-          "image": "../projects-images/tic-tac-toe.png",
+          "image": "../images/projects-images/tic-tac-toe.webp",
           "technologies": [
             {
               "style": "react",
-              "icon": "../icons/react.svg",
+              "icon": "../images/icons/react.svg",
               "name": "React"
             },
             {
