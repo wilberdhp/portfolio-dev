@@ -1,0 +1,52 @@
+.projects-container {
+  margin-top: 30px;
+  padding: 8px;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+
+
+
+.button-view {
+  margin: 20px;
+  cursor: pointer;
+  background-color: var(--btn-hero-more-project-background);
+  color: var(--btn-hero-more-project-color);
+  border: none;
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: var(--btn-hero-more-project-box-shadow);
+  transition:
+    box-shadow 200ms ease-in-out,
+    transform 200ms ease-in-out;
+}
+
+.button-view:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.button-view:active {
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}

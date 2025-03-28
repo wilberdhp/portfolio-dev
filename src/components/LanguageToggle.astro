@@ -1,0 +1,151 @@
+---
+interface Props {
+  language: {
+    english: string
+    spanish: string
+    search: string
+	}
+}
+
+const { language } = Astro.props;
+const { english, spanish, search } = language; 
+
+type Language = [
+  {
+    language: string,
+    id: string,
+    url: string
+  },
+  {
+    language: string,
+    id: string,
+    url: string
+  }
+]
+
+const LANGUAGE: Language = [
+  {
+    language: spanish,
+    id: "es",
+    url: "/espanol"
+  },
+  {
+    language: english,
+    id: "en",
+    url: "/"
+  }
+]
+---
+
+<div class="language-toggle-container">
+  <button transition:persist id="language-toggle-btn" class="language-toggle-btn-class">
+    <span class="sr-only">{search}</span>
+    <i class="bi bi-translate"></i>
+  </button>
+  <div transition:persist id="languages-menu" class="languages-menu-class">
+    <ul>
+      {
+        LANGUAGE.map(({ language, id, url }) => (
+        <li class="language-menu-option" id={id}><a href={url}>{language}</a></li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  i {
+    font-size: 20px;
+  }
+
+  .language-toggle-container {
+    position: relative;
+    margin: auto 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-toggle-btn-class {
+    appearance: none;
+    border: none;
+    display: flex;
+  }
+
+  a {
+    cursor: default;
+  }
+
+  .languages-menu-class {
+    display: none;
+    position: absolute;
+    top: 40px;
+    font-size: 16px;
+    min-width: 6rem;
+    border-radius: 10px;
+    border: none;
+    background: var(--nav-background);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .language-menu-option {
+    text-align: center;
+    padding: 3px 4px;
+    cursor: default;
+    border-radius: 5px;
+  }
+
+  .language-menu-option:hover {
+    background-color: rgba(128, 128, 128, 0.443);
+  }
+
+  #languages-menu.open {
+    display: inline;
+    animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes scale-up-center {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 350px) {
+    i {
+      font-size: 16px;
+    }
+
+    .languages-menu-class {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 427px) {
+    .languages-menu-class {
+      min-width: 4rem;
+      top: 39px;
+    }
+  }
+
+</style>
+
+<script is:inline>
+  const languagesMenu = document.getElementById("languages-menu");
+
+  document.getElementById("language-toggle-btn").addEventListener("click", (e) => {
+    e.stopPropagation()
+    languagesMenu.classList.toggle("open");
+  })
+
+  document.addEventListener("click", () => {
+    if (languagesMenu.classList.contains("open")) {
+      languagesMenu.classList.remove("open");
+    }
+  }) 
+</script>

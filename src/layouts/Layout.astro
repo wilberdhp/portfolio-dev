@@ -1,22 +1,168 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import 'bootstrap-icons/font/bootstrap-icons.min.css';
+import '../styles/variables.css';
+ 
+interface Props {
+	lang: string
+	title: string
+	metaDescription: string
+	metaKeywords: string
+	metaOGTitle: string
+	metaOGDescription: string
+	metaOGUrl: string
+	metaTTitle: string
+	metaTDescription: string
+	header: {
+		about: string
+		projects: string
+		contact: string
+		modo: {
+			light: string
+			dark: string
+			system: string
+			search: string
+		}
+		language: {
+			english: string
+			spanish: string
+			search: string
+		}
+	}
+	footer: {
+		text: string
+	}
+}
+
+const { 
+	lang, 
+	title, 
+	metaDescription, 
+	metaKeywords, 
+	metaOGTitle,
+	metaOGDescription,
+	metaOGUrl,
+	metaTTitle,
+	metaTDescription,
+	header, 
+	footer 
+} = Astro.props;
+---
+
+
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="author" content="Wilber Hernández">
+		<meta name="description" content={metaDescription}>
+		<meta name="keywords" content={metaKeywords}>
+		<meta name="robots" content="index, follow">
+		<meta name="theme-color" content="#ffffff" id="theme-color-meta">
+		<meta name="date" content="2025-03-03T01:11:00-05:00">
+
+
+		<!-- Open Graph -->
+		<meta property="og:title" content={metaOGTitle}>
+		<meta property="og:description" content={metaOGDescription}>
+		<meta property="og:image" content="https://wilberdhp-portfolio.netlify.app/images/projects-images/portfolio.webp">
+		<meta property="og:url" content={metaOGUrl}>
+		<meta property="og:type" content="website">
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content={metaTTitle}>
+		<meta name="twitter:description" content={metaTDescription}>
+		<meta name="twitter:image" content="https://wilberdhp-portfolio.netlify.app/images/projects-images/portfolio.webp">
+		<meta name="twitter:site" content="@wilberdhp">
+
+		<link rel="canonical" href="https://wilberdhp-portfolio.netlify.app">
+		<link rel="alternate" hreflang="es" href="https://wilberdhp-portfolio.netlify.app/espanol/">
+		<link rel="alternate" hreflang="en" href="https://wilberdhp-portfolio.netlify.app">
+
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Rubik:wght@800&display=swap"
+      rel="stylesheet" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
-	<body>
+	<body >
+		<div class="background"></div>
+		<Header header={header} />
 		<slot />
+		<Footer footer={footer} />
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
 	}
+
+	html {
+		scroll-behavior: smooth;
+		scrollbar-gutter: stable;
+	}
+
+
+	body {
+		color: var(--text-color);
+	}
+
+	.background {
+		position: fixed;
+		z-index: -100;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--background-color);
+		background-image: var(--background-image);
+	}
+
+	.section-text-paragraph {
+    text-align: center;
+    color: var(--section-text-paragraph);
+    font-size: 17px;
+		font-family: "Roboto Mono", monospace;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: bold;
+		font-family: "Rubik", sans-serif;
+  }
+
 </style>
+
+<script is:inline>
+	const themeColorMeta = document.getElementById("theme-color-meta")
+	const theme = document.body.getAttribute("data-theme")
+	const themeSystem = window.matchMedia("(prefers-color-scheme: dark)")
+
+	if (themeSystem.matches && theme === "dark") {
+		themeColorMeta.setAttribute("content", "#000000");
+	} else if (theme === "light") {
+		themeColorMeta.setAttribute("content", "#ffffff");
+	}
+
+</script>
+
+<script is:inline type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"datePublished": "2025-03-03T01:11:00-05:00",
+		"dateModified": "2025-28-03T02:06:00-04:00"
+	}
+</script>
+	

@@ -1,0 +1,104 @@
+{
+  "english": {
+    "header": {
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact",
+      "modo": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System",
+        "search": "Choose the theme"
+      },
+      "language": {
+        "english": "English",
+        "spanish": "Spanish",
+        "search": "Choose the language"
+      }
+    },
+    "hero": {
+      "subtitle": "Frontend Developer",
+      "resumen": "I like to program and create innovative and efficient solutions through web development.",
+      "curriculum": "./CV/cv-en/Wilber-Hernández-Resume.pdf"
+    },
+    "aboutMe": {
+      "initialText": "Get To Know More",
+      "title": "About Me",
+      "container": {
+        "IAm": {
+          "title": "I am",
+          "paragraph1": "I am a web developer specialized in frontend development. I enjoy innovating and learning new things.",
+          "paragraph2": "I am constantly learning and updating my knowledge about web development."
+        },
+        "education": {
+          "title": "Education",
+          "paragraph1": "I learned web development self-taught through freeCodeCamp and YouTube courses from freeCodeCamp Español, HolaMundo, and midudev.",
+          "paragraph2": "Currently, I am in my second year of Informatics Engineering at the University of Camagüey \"Ignacio Agramonte y Loynaz\" (UCIAL), where I have learned Python and Java."
+        },
+        "skills": {
+          "title": "Skills",
+          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS", "React", "Astro", "Node.js", "Express", "MySQL", "Git", "ChatGPT"] 
+        }
+      }
+    },
+    "contact": {
+      "initialText": "Get in Touch",
+      "title": "Contact Me"
+    },
+    "footer": {
+      "text": "All rights reserved."
+    }
+  },
+  "espanol": {
+    "header": {
+      "about": "Sobre Mí",
+      "projects": "Proyectos",
+      "contact": "Contacto",
+      "modo": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema",
+        "search": "Elige el tema" 
+      },
+      "language": {
+        "english": "Inglés",
+        "spanish": "Español",
+        "search": "Elige el idioma" 
+      }
+    },
+    "hero": {
+      "image": "../images/hero-image.webp",
+      "subtitle": "Desarrollador Frontend",
+      "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
+      "curriculum": "../CV/cv-es/Wilber-Hernández-Resume.pdf"
+    },
+    "aboutMe": {
+      "initialText": "Conozca más",
+      "title": "Sobre Mí",
+      "container": {
+        "IAm": {
+          "title": "Yo soy",
+          "paragraph1": "Soy un desarrollador web especializado en desarrollo frontend. Me gusta innovar y aprender cosas nuevas.",
+          "paragraph2": "Constantemente estoy aprendiendo y actualizando mis conocimientos sobre desarrollo web."
+        },
+        "education": {
+          "title": "Educación",
+          "paragraph1": "Aprendí desarrollo web de forma autodidacta a través de freeCodeCamp y cursos en YouTube de freeCodeCamp Español, HolaMundo y midudev.",
+          "paragraph2": "Actualmente estoy en segundo año de Ingeniería Informática en la Universidad de Camagüey \"Ignacio Agramonte y Loynaz\" (UCIAL), donde he aprendido Python y Java."
+        },
+        "skills": {
+          "title": "Habilidades",
+          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS", "React", "Astro", "Node.js", "Express", "MySQL", "Git", "ChatGPT"] 
+        }
+      }
+    },
+    "contact": {
+      "initialText": "Ponte en Contacto",
+      "title": "Contáctame"
+    },
+    "footer": {
+      "text": "Todos los derechos reservados."
+    }
+  }
+}
+

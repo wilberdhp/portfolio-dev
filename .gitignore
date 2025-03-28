@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+
+#Bootstrap
+bootstrap-icons-1.11.3
+

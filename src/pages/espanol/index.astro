@@ -1,0 +1,32 @@
+---
+
+import About from '../../components/About.astro';
+import Contact from '../../components/Contact.astro';
+import Hero from '../../components/Hero.astro';
+import Projects from '../../components/Projects.astro';
+import Layout from '../../layouts/Layout.astro';
+import { espanol } from '../../data/data.json';
+import { projectEspanol } from '../../data/projects.json';
+
+const { header, hero, aboutMe, contact, footer } = espanol;
+
+---
+
+<Layout 
+	lang='es' 
+	title='Portafolio de Wilber Hernández | Desarrollador y Programador web' 
+	metaDescription='Desarrollador web junior con experiencia en HTML, CSS, JavaScript, Astro, React y más. Explora mi portafolio y proyectos.'
+	metaKeywords='desarrollador web, frontend, backend, Astro, React, JavaScript, Node.js, TypeScript, portafolio'
+	metaOGTitle='Wilber Hernández - Desarrollador Web'
+	metaOGDescription='Desarrollador web especializado en Astro, React y más. Descubre mis proyectos.'
+	metaOGUrl='https://wilberdhp-portfolio.netlify.app/espanol/'
+	metaTTitle='Wilber Hernández - Desarrollador Web'
+	metaTDescription='Desarrollador web especializado en React, Node.js y más. Descubre mis proyectos.'
+
+	header={header} footer={footer}
+	>
+	<Hero hero={hero}/>
+	<About aboutMe={aboutMe}/>
+	<Projects projects={projectEspanol}/>
+	<Contact contact={contact} />
+</Layout>

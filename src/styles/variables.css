@@ -1,0 +1,74 @@
+:root {
+  --background-color: #0a0a0a;
+  --background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
+
+  --btn-hero-more-project-background: #fff;
+  --btn-hero-more-project-box-shadow: 0 0 4px gray;
+  --btn-hero-more-project-color: #020202;
+
+
+  --text-color: #f2f2f2;
+  --btn-color: #fff;
+  --btn-text-color: #222;
+  --projects-card-bg: #fff;
+  --form-text-color: #fff;
+  --footer-text-color: #bbb;
+
+  --section-text-paragraph: rgb(156, 156, 156);
+
+  --border-projects: none;
+
+  --border-card-projects: 1px solid rgba(0, 0, 0, 0.584);
+  --background-color-card-projects: rgb(31, 30, 30);
+  --color-demo: white;
+  --border-demo: 1px solid rgba(255, 255, 255, 0.584);
+  --background-demo: rgb(0, 0, 0);
+  --background-star: rgb(255, 255, 255);
+
+
+  --box-background: rgba(255, 255, 255, 0.174);
+  --border-inputs: 1px solid rgba(255, 255, 255, 0.781);
+  --nav-box-shadow: 0 0 2px rgb(96, 96, 96);
+  --nav-background: #1f1e1ed3;
+  --nav-color: rgba(255, 255, 255, 0.708);
+  --border-lang-theme: none;
+
+  --footer-hover-color: rgba(255, 255, 255, 0.573);
+}
+
+[data-theme="light"] {
+
+  --background-color: transparent;
+  --background-image: radial-gradient(100% 50% at 50% 0%,rgba(0,163,255,0.13) 0,rgba(0,163,255,0) 50%,rgba(0,163,255,0) 100%);
+
+  --btn-hero-more-project-background: #0987f2;
+  --btn-hero-more-project-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  --btn-hero-more-project-color: #fff;
+
+
+  --text-color: #222;
+  --btn-text-color: #fff;
+  --projects-card-bg: #ffffff00;
+  --form-text-color: #555;
+  --footer-text-color: #888;
+
+  --section-text-paragraph: rgb(85, 85, 85);
+
+  --border-projects: 2px solid rgba(0, 0, 0, 0.507);
+  --background-color-card-projects: transparent;
+  --color-demo: black;
+  --border-demo: 1px solid rgba(0, 0, 0, 0.584);
+  --background-demo: rgb(31, 31, 31);
+  --background-star: rgba(248, 248, 130, 0.518);
+
+  --border-card-projects: none;
+
+  --box-background: transparent;
+  --border-inputs: 1px solid rgba(0, 0, 0, 0.598);
+  --nav-box-shadow: 0 0 5px rgb(96, 96, 96);
+  --nav-background: #ffffff91;
+  --nav-color: black;
+  --border-lang-theme: none;
+
+  --footer-hover-color: rgba(0, 0, 0, 0.603);
+}

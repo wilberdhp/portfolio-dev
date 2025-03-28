@@ -1,0 +1,428 @@
+{
+  "projectsEnglish": {
+    "initialText": "Browse My",
+    "title": "Projects",
+    "container": [
+      {
+        "title": "Gallery",
+        "image": "./images/projects-images/galeria.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "An image gallery. The images can be filtered by category. Clicking on an image opens a modal window with a description of the image.",
+        "github": "https://github.com/wilberdhp/galeria-react",
+        "live": "https://taupe-gaufre-cd3587.netlify.app"
+      },
+      {
+        "title": "Password Generator",
+        "image": "./images/projects-images/generador-contrasenas.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "A secure password generator. It creates strong passwords that provide greater security for your accounts.",
+        "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
+        "live": "https://generador-contrasenas-seguras.netlify.app"
+      },
+      {
+        "title": "Portfolio",
+        "image": "./images/projects-images/portfolio.webp",
+        "technologies": [
+          {
+            "style": "astro",
+            "icon": "./images/icons/Astro_dark.svg",
+            "name": "Astro"
+          },
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          },
+          {
+            "style": "tailwind",
+            "icon": "./images/icons/tailwindcss.svg",
+            "name": "Tailwind CSS"
+          }
+        ],
+        "description": "My web portfolio.",
+        "github": "https://github.com/wilberdhp/portfolio-dev",
+        "star": "¡Leave your star ⭐!"
+      },
+      {
+        "title": "Weather Dashboard",
+        "image": "./images/projects-images/weather-dashboard.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+          
+        ],
+        "description": "Displays weather information anywhere in the world.",
+        "github": "https://github.com/wilberdhp/weather-dashboard",
+        "live": "https://golden-medovik-5f0d0d.netlify.app"
+      },
+      {
+        "title": "QR Code",
+        "image": "./images/projects-images/qr-code.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+          
+        ],
+        "description": "Generate and scan QR codes.",
+        "github": "https://github.com/wilberdhp/generator-scanner-qr-code",
+        "live": "https://generator-scanner-qr-code.netlify.app"
+      },
+      {
+        "title": "Contact Form",
+        "image": "./images/projects-images/contact-form.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "node",
+            "icon": "./images/icons/nodejs.svg",
+            "name": "Node.js"
+          },
+          {
+            "style": "express",
+            "icon": "./images/icons/express.svg",
+            "name": "Express"
+          }
+          
+        ],
+        "description": "Functional contact form. WARNING: This is just an example. Do not enter personal or sensitive information.",
+        "github": "https://github.com/wilberdhp/contact-form-client",
+        "live": "https://contact-form-client-rosy.vercel.app"
+      },
+      {
+        "title": "Logic Exercises",
+        "image": "./images/projects-images/ejercicios-logica.webp",
+        "technologies": [
+          {
+            "style": "astro",
+            "icon": "./images/icons/Astro_dark.svg",
+            "name": "Astro"
+          },
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+          
+        ],
+        "description": "Solutions to JavaScript programming logic exercises.",
+        "github": "https://github.com/wilberdhp/ejercicios-logica-web",
+        "live": "https://ejercicios-logica-javascript.netlify.app"
+      },
+      {
+        "title": "Palindrome Checker",
+        "image": "./images/projects-images/palindrome.webp",
+        "technologies": [
+          {
+            "style": "html",
+            "icon": "./images/icons/html.svg",
+            "name": "HTML"
+          },
+          {
+            "style": "css",
+            "icon": "./images/icons/css.svg",
+            "name": "CSS"
+          },
+          {
+            "style": "javascript",
+            "icon": "./images/icons/javascript.svg",
+            "name": "JavaScript"
+          }
+        ],
+        "description": "A palindrome es a word or phrase that reads the some one way and the other way.",
+        "github": "https://github.com/wilberdhp/palindrome",
+        "live": "https://wilberdhp.github.io/palindrome"
+      },
+      {
+        "title": "Digital Clock",
+        "image": "./images/projects-images/digital-clock.webp",
+        "technologies": [
+          {
+            "style": "html",
+            "icon": "./images/icons/html.svg",
+            "name": "HTML"
+          },
+          {
+            "style": "css",
+            "icon": "./images/icons/css.svg",
+            "name": "CSS"
+          },
+          {
+            "style": "javascript",
+            "icon": "./images/icons/javascript.svg",
+            "name": "JavaScript"
+          }
+        ],
+        "description": "Digital clock with colorful background. With color-changing functionality.",
+        "github": "https://github.com/wilberdhp/digital-clock",
+        "live": "https://wilberdhp.github.io/digital-clock"
+      }
+    ],
+    "btnMore": "More projects",
+    "btnLess": "Less projects"
+  },
+  "projectEspanol": {
+    "initialText": "Explora mis",
+    "title": "Proyectos",
+    "container": [
+      {
+        "title": "Galería",
+        "image": "../images/projects-images/galeria.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "Una galería de imágenes. Las imagenes se pueden filtrar por categoría. Al hacer clic en alguna imagen se abre una ventana modal con una descripción de la imagen.",
+        "github": "https://github.com/wilberdhp/galeria-react",
+        "live": "https://taupe-gaufre-cd3587.netlify.app"
+      },
+      {
+        "title": "Generador de contraseñas",
+        "image": "../images/projects-images/generador-contrasenas.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "Un generador de contraseñas seguras. Crea contraseñas robustas que dan mayor seguridad a tus cuentas.",
+        "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
+        "live": "https://generador-contrasenas-seguras.netlify.app"
+      },
+      {
+        "title": "Portafolio",
+        "image": "../images/projects-images/portfolio.webp",
+        "technologies": [
+          {
+            "style": "astro",
+            "icon": "../images/icons/Astro_dark.svg",
+            "name": "Astro"
+          },
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          },
+          {
+            "style": "tailwind",
+            "icon": "../images/icons/tailwindcss.svg",
+            "name": "Tailwind CSS"
+          }
+        ],
+        "description": "Mi portafolio web.",
+        "github": "https://github.com/wilberdhp/portfolio-dev",
+        "star": "¡Deja tu estrella ⭐!"
+      },
+      {
+        "title": "Panel Meteorológico",
+        "image": "../images/projects-images/weather-dashboard.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+          
+        ],
+        "description": "Muestra información sobre el clima en cualquier parte del mundo.",
+        "github": "https://github.com/wilberdhp/weather-dashboard",
+        "live": "https://golden-medovik-5f0d0d.netlify.app"
+      },
+      {
+        "title": "Códigos QR",
+        "image": "../images/projects-images/qr-code.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+          
+        ],
+        "description": "Genera y escanea códigos qr.",
+        "github": "https://github.com/wilberdhp/generator-scanner-qr-code",
+        "live": "https://generator-scanner-qr-code.netlify.app"
+      },
+      {
+        "title": "Formulario de Contacto",
+        "image": "../images/projects-images/contact-form.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "node",
+            "icon": "../images/icons/nodejs.svg",
+            "name": "Node.js"
+          },
+          {
+            "style": "express",
+            "icon": "../images/icons/express.svg",
+            "name": "Express"
+          }
+          
+        ],
+        "description": "Formulario de contacto funcional. ADVERTENCIA: esto es solo un ejemplo, no ingrese información personal o sensible.",
+        "github": "https://github.com/wilberdhp/contact-form-client",
+        "live": "https://contact-form-client-rosy.vercel.app"
+      },
+      {
+        "title": "Ejercicios de lógica",
+        "image": "../images/projects-images/ejercicios-logica.webp",
+        "technologies": [
+          {
+            "style": "astro",
+            "icon": "../images/icons/Astro_dark.svg",
+            "name": "Astro"
+          },
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+          
+        ],
+        "description": "Soluciones de ejercicios de lógica de programación con JavaScript.",
+        "github": "https://github.com/wilberdhp/ejercicios-logica-web",
+        "live": "https://ejercicios-logica-javascript.netlify.app"
+      },
+      {
+        "title": "Verificador de Palindromos",
+        "image": "../images/projects-images/palindrome.webp",
+        "technologies": [
+          {
+            "style": "html",
+            "icon": "../images/icons/html.svg",
+            "name": "HTML"
+          },
+          {
+            "style": "css",
+            "icon": "../images/icons/css.svg",
+            "name": "CSS"
+          },
+          {
+            "style": "javascript",
+            "icon": "../images/icons/javascript.svg",
+            "name": "JavaScript"
+          }
+        ],
+        "description": "Un palíndromo es una palabra o frase que se lee igual en un sentido que en el otro.",
+        "github": "https://github.com/wilberdhp/palindrome",
+        "live": "https://wilberdhp.github.io/palindrome"
+      },
+      {
+        "title": "Reloj Digital",
+        "image": "../images/projects-images/digital-clock.webp",
+        "technologies": [
+          {
+            "style": "html",
+            "icon": "../images/icons/html.svg",
+            "name": "HTML"
+          },
+          {
+            "style": "css",
+            "icon": "../images/icons/css.svg",
+            "name": "CSS"
+          },
+          {
+            "style": "javascript",
+            "icon": "../images/icons/javascript.svg",
+            "name": "JavaScript"
+          }
+        ],
+        "description": "Reloj digital con un fondo de colores. Con funcionalidad para cambiar los colores.",
+        "github": "https://github.com/wilberdhp/digital-clock",
+        "live": "https://wilberdhp.github.io/digital-clock"
+      }
+    ],
+    "btnMore": "Más proyectos",
+    "btnLess": "Menos proyectos"
+  }
+}

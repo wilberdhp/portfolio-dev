@@ -1,0 +1,147 @@
+---
+import Skill from './smalls/Skill.astro';
+import EducationSvg from './smalls/EducationSvg.astro';
+
+interface Props {
+  aboutMe: {
+    initialText: string
+    title: string
+    container: {
+      IAm: {
+        title: string
+        paragraph1: string
+        paragraph2: string
+      }
+      education: {
+        title: string
+        paragraph1: string
+        paragraph2: string
+      }
+      skills: {
+        title: string
+        skillsArray: string[]
+      }
+    }
+  }
+}
+
+const { aboutMe } = Astro.props;
+
+const { initialText, title, container } = aboutMe; 
+
+const { IAm, education, skills } = container;
+
+---
+
+
+<section id="about">
+  <p class="section-text-paragraph">{initialText}</p>
+  <h1 class="section-title">{title}</h1>
+
+  <div class="box-container">
+    <article class="box">
+      <i class="bi bi-person"></i>
+      <h3>{IAm.title}</h3>
+      <p class="description">
+        {IAm.paragraph1}
+      </p>
+      <p class="description">
+        {IAm.paragraph2}
+      </p>
+    </article>
+    <article class="box">
+      <EducationSvg class="icon" />     
+      <h3>{education.title}</h3>
+      <p class="description">{education.paragraph1}</p>
+      <p class="description">{education.paragraph2}</p>
+    </article>
+    <article class="box">
+      <i class="bi bi-award"></i>
+      <h3>{skills.title}</h3>
+      <div class="skills">
+        {
+          skills.skillsArray.map((skill) => (
+            <Skill skill={skill} />
+          ))
+        }
+      </div>
+    </article>
+</div>
+</section>
+
+<style>
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+    padding-top: 100px;
+		padding-bottom: 100px;
+  }
+
+  .box-container {
+    /* font-family: "Roboto Mono", monospace; */
+    margin-top: 60px;
+    padding: 20px;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .description {
+    max-width: 800px;
+    padding: 3px 10px;
+  }
+
+  .box-container .icon {
+    width: 50px;
+  }
+
+  .box-container .bi-award, .box-container .bi-person {
+    font-size: 50px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    text-wrap: pretty;
+    max-width: 420px;
+    min-height: 330px;
+    padding: 15px;
+    border-radius: 20px;
+    border: var(--border-projects);
+    background: var(--box-background);
+  }
+
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .skills {
+    font-size: 17px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }  
+</style>

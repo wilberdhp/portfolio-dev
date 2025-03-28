@@ -1,0 +1,222 @@
+---
+import SystemIcon from "./icons/System.astro";
+import SunIcon from "./icons/Sun.astro";
+import MoonIcon from "./icons/Moon.astro";
+
+interface Props {
+  modo: {
+    light: string
+    dark: string
+    system: string
+    search: string
+  }
+}
+
+const { modo } = Astro.props;
+const { light, dark, system, search} = modo;
+
+
+type Themes = [
+  {
+    theme: string,
+    id: string
+  },
+  {
+    theme: string,
+    id: string
+  },
+  {
+    theme: string,
+    id: string
+  }
+]
+
+const THEMES: Themes = [
+  {
+    theme: light,
+    id: "light"
+  },
+  {
+    theme: dark,
+    id: "dark"
+  },
+  {
+    theme: system,
+    id: "system"
+  }
+]
+---
+
+<div class="theme-toggle-container">
+  <button transition:persist id="theme-toggle-btn" class="theme-toggle-btn-class">
+    <span class="sr-only">{search}</span>
+    <SunIcon id="light" class="theme-toggle-icon" />
+    <MoonIcon id="dark" class="theme-toggle-icon" />
+    <SystemIcon id="system" class="theme-toggle-icon" />
+  </button>
+  <div transition:persist id="themes-menu" class="themes-menu-class">
+    <ul>
+      {
+        THEMES.map(({ id, theme }) => (
+          <li class="theme-menu-option" id={id}>{theme}</li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  .theme-toggle-container {
+    position: relative;
+    margin: auto 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .theme-toggle-btn-class {
+    appearance: none;
+    border: none;
+    display: flex;
+  }
+
+  .theme-toggle-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-toggle-icon:nth-child(2), .theme-toggle-icon:last-child {
+    position: absolute;
+  }
+
+  .themes-menu-class {
+    display: none;
+    position: absolute;
+    top: 37px;
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 6rem;
+    border-radius: 10px;
+    border: none;
+    background: var(--nav-background);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .theme-menu-option {
+    text-align: center;
+    padding: 3px 4px;
+    cursor: default;
+    border-radius: 5px;
+  }
+
+  .theme-menu-option:hover {
+    background-color: rgba(128, 128, 128, 0.443);
+  }
+
+  #themes-menu.open {
+    display: inline;
+    animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes scale-up-center {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .themes-menu-class {
+      font-size: 13px;
+      min-width: 4rem;
+    }
+  }  
+  @media (max-width: 427px) {
+    .themes-menu-class {
+      min-width: 5rem;
+      top: 33px;
+    }
+  }  
+
+</style>
+
+<script is:inline>
+  let removeEvent = null; // limpiar eventos
+  const themesMenu = document.getElementById("themes-menu")
+  const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
+  // console.log(matchMedia);
+
+  document.getElementById("theme-toggle-btn").addEventListener("click", (e) => {
+    e.stopPropagation();
+    themesMenu.classList.toggle("open");
+  })
+
+  document.addEventListener("click", () => {
+    if (themesMenu.classList.contains("open")) themesMenu.classList.remove("open");
+  })
+
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined") {
+      return localStorage.getItem("theme") ?? "system";
+    }
+
+    return matchMedia.matches ? "dark" : "light";
+  }
+
+  const updateIcon = (themePreference) => {
+    document.querySelectorAll(".theme-toggle-icon").forEach(element => {
+      element.style.scale = element.id === themePreference ? "1" : "0"
+    })
+  }
+
+  const updateTheme = () => {
+    if (removeEvent !== null) {
+      removeEvent();
+    }
+    matchMedia.addEventListener("change", updateTheme);
+    removeEvent = () => {
+      matchMedia.removeEventListener("change", updateTheme);
+    }
+
+    const themePreference = getThemePreference();
+    const isDark = themePreference === "dark" || (themePreference === "system" && matchMedia.matches)
+
+    // console.log(isDark);
+    // console.log(themePreference);
+    updateIcon(themePreference);
+
+    // Agregar el data-theme al body
+    document.body.setAttribute("data-theme", isDark ? "dark" : "light")
+    // if (isDark) {
+    //   document.body.setAttribute("data-theme", "dark")
+    // } else {
+    //   document.body.setAttribute("data-theme", "light")
+    // }
+  }
+
+  updateTheme()
+
+  
+  document.querySelectorAll(".theme-menu-option").forEach((option) => {
+    option.addEventListener("click", (e) => {
+      localStorage.setItem("theme", e.target.id)
+      updateTheme()
+    })
+  })
+
+  document.addEventListener("astro:after-swap", () => {
+    updateTheme();
+    window.scrollTo({ left: 0, top: 0, behavior: "instant" });
+  })
+  
+
+
+
+</script>

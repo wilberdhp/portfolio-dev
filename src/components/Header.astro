@@ -1,0 +1,162 @@
+---
+import LanguageToggle from "./LanguageToggle.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+
+interface Props {
+  header: {
+		about: string
+		projects: string
+		contact: string
+		modo: {
+			light: string
+			dark: string
+			system: string
+      search: string
+		}
+		language: {
+			english: string
+			spanish: string
+      search: string
+		}
+	}
+}
+
+const { header } = Astro.props;
+
+const { about, projects, contact, modo, language } = header;
+---
+
+
+<header>
+  <nav class="px-3">
+    <a id="position-section" href="#about" aria-label="about" >{about}</a>
+    <a id="position-section" href="#projects" aria-label="projects" >{projects}</a>
+    <a id="position-section" href="#contact" aria-label="contact" >{contact}</a>
+    
+    <ThemeToggle modo={modo} />
+    <LanguageToggle language={language} />
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("header nav a");    
+
+    const observer = new IntersectionObserver((entries: any[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("aria-label") === entry.target.id) {
+              item.classList.add("text-blue-500");
+            } else {
+              item.classList.remove("text-blue-500");
+            }
+          })
+        }
+      })
+    }, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3
+    })
+
+    sections.forEach(section => {
+      observer.observe(section);
+    })
+
+    // Cleanup de la función
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect()
+      } else {
+        sections.forEach(section => {
+          observer.observe(section)
+        })
+      }
+    }
+
+  })
+</script>
+
+
+<style is:inline>
+
+  header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+
+
+    nav {
+      display: flex;
+      color: var(--nav-color);
+      justify-content: center;
+      border-radius: calc(infinity * 1px);
+      align-items: center;
+      gap: 10px; 
+
+      a, button {
+        padding: 4px 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      a[id="position-section"]:hover {
+        color: rgb(59 130 246);
+      }
+
+      button:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+
+  /* Animaciones */
+  nav {
+    background-color: var(--nav-background);
+    animation: nav-shadow 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadow {
+    0% {
+      background-color: transparent;
+    }
+
+    to {
+      box-shadow: var(--nav-box-shadow);
+      backdrop-filter: blur(8px);
+    }
+  }
+
+  @media (max-width: 430px) {
+    header nav {
+      gap: 8px;
+    }
+
+    header nav a, header nav button {
+      padding: 3px;
+    }
+  }  
+
+  @media (max-width: 380px) {
+    header nav {
+      gap: 6px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    header nav a, header nav button {
+      font-size: 13px;
+    }
+  }  
+
+</style>
+
