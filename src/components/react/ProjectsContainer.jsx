@@ -39,7 +39,7 @@ export const ProjectsContainer = ({ allProjects, textBtnMoreProjects, textBtnLes
 
   return (
     <>
-      <div className="projects-container">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-7 p-2 h-[65%]">
         {
           projects.map(({ image, title, technologies, description, github, live, star }, index) => (
             <CardProject key={index} id={index} image={image} title={title} technologies={technologies} description={description} github={github} live={live} star={star} />

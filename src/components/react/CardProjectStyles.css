@@ -9,7 +9,39 @@
   font-weight: 600;
 }
 
+
+.technology-icon {
+  height: 30px;
+}
+
 /* Completar luego */
+
+/* .technology.tauri {
+  background-color: rgba(0, 0, 0, 0.441);
+  color: white;
+
+  .technology-icon {
+    width: 12px;
+  }
+}
+
+.technology.typescript {
+  background-color: rgba(2, 21, 36, 0.425);
+  color: white;
+
+  .technology-icon {
+    width: 18px;
+  }
+}
+
+.technology.sqlite {
+  background-color: rgba(255, 255, 255, 0.594);
+  color: white;
+
+  .technology-icon {
+    width: 12px;
+  }
+}
 
 .technology.astro {
   background-color: rgba(0, 0, 0, 0.676);
@@ -27,7 +59,7 @@
   .technology-icon {
     width: 18px;
   }
-}
+} */
 
 .technology.midudev {
   background-color: #0099ff;
@@ -79,9 +111,6 @@
   }
 }
 
-.technology-icon {
-  width: 15px;
-}
 
 .project-card {
   display: flex;
@@ -119,7 +148,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 8px;
 }
 

@@ -38,7 +38,7 @@ const { IAm, education, skills } = container;
   <p class="section-text-paragraph">{initialText}</p>
   <h1 class="section-title">{title}</h1>
 
-  <div class="box-container">
+  <div class="box-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <article class="box">
       <i class="bi bi-person"></i>
       <h3>{IAm.title}</h3>
@@ -86,16 +86,17 @@ const { IAm, education, skills } = container;
     margin-top: 60px;
     padding: 20px;
     height: 65%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
   }
 
   .description {
     max-width: 800px;
     padding: 3px 10px;
+    font-size: 1.1em;
   }
 
   .box-container .icon {

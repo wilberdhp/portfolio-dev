@@ -4,42 +4,139 @@
     "title": "Projects",
     "container": [
       {
-        "title": "Gallery",
-        "image": "./images/projects-images/galeria.webp",
+        "title": "Secure Vault",
+        "image": "./images/projects-images/secure-vault.webp",
         "technologies": [
+          {
+            "style": "tauri",
+            "icon": "./images/icons/tauri.svg",
+            "name": "Tauri"
+          },
           {
             "style": "react",
             "icon": "./images/icons/react.svg",
             "name": "React"
+          }, 
+          {
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
           },
           {
-            "style": "bootstrap",
-            "icon": "./images/icons/bootstrap.svg",
-            "name": "Bootstrap"
+            "style": "zustand",
+            "icon": "./images/icons/zustand.svg",
+            "name": "Zustand"
+          },
+          {
+            "style": "sqlite",
+            "icon": "./images/icons/sqlite.svg",
+            "name": "SQLCipher"
           }
         ],
-        "description": "An image gallery. The images can be filtered by category. Clicking on an image opens a modal window with a description of the image.",
-        "github": "https://github.com/wilberdhp/galeria-react",
-        "live": "https://taupe-gaufre-cd3587.netlify.app"
+        "description": "Secure desktop application to store passwords, contacts, and notes with authentication and full CRUD functionality.",
+        "github": "https://github.com/wilberdhp/secret-vault",
+        "type": "Desktop App"
       },
       {
-        "title": "Password Generator",
-        "image": "./images/projects-images/generador-contrasenas.webp",
+        "title": "Store Management",
+        "image": "./images/projects-images/gestion-tienda.webp",
         "technologies": [
+          {
+            "style": "electron",
+            "icon": "./images/icons/electron.svg",
+            "name": "Electron"
+          },
           {
             "style": "react",
             "icon": "./images/icons/react.svg",
             "name": "React"
           },
           {
-            "style": "bootstrap",
-            "icon": "./images/icons/bootstrap.svg",
-            "name": "Bootstrap"
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          },
+          {
+            "style": "sqlite",
+            "icon": "./images/icons/sqlite.svg",
+            "name": "SQLite"
           }
         ],
-        "description": "A secure password generator. It creates strong passwords that provide greater security for your accounts.",
-        "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
-        "live": "https://generador-contrasenas-seguras.netlify.app"
+        "description": "Desktop application for managing small businesses, including sales, inventory, sales history, and analytics.",
+        "github": "https://github.com/wilberdhp/gestion-tienda",
+        "type": "Desktop App"
+      },
+      {
+        "title": "DHRICO Importação e Exportação",
+        "image": "./images/projects-images/dhrico.webp",
+        "technologies": [
+          {
+            "style": "next",
+            "icon": "./images/icons/nextjs.svg",
+            "name": "Next.js"
+          },
+          {
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          }, 
+          {
+            "style": "zustand",
+            "icon": "./images/icons/zustand.svg",
+            "name": "Zustand"
+          }
+        ],
+        "description": "Corporate website for a Brazilian import and export company. The project increased brand visibility and directly contributed to higher sales.",
+        "live": "https://dhrico.vercel.app",
+        "type": "Website"
+      },
+      {
+        "title": "TechFusion Cuba",
+        "image": "./images/projects-images/techfusion-cuba.webp",
+        "technologies": [
+          {
+            "style": "next",
+            "icon": "./images/icons/nextjs.svg",
+            "name": "Next.js"
+          },
+          {
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          },
+          {
+            "style": "zustand",
+            "icon": "./images/icons/zustand.svg",
+            "name": "Zustand"
+          }
+        ],
+        "description": "Official website of my technology business focused on software development and hardware sales, presenting the company in depth.",
+        "live": "https://techfusioncuba.vercel.app",
+        "type": "Website"
+      },
+      {
+        "title": "TechFusion Plus",
+        "image": "./images/projects-images/techfusion-plus.webp",
+        "technologies": [
+          {
+            "style": "html",
+            "icon": "./images/icons/html.svg",
+            "name": "HTML"
+          },
+          {
+            "style": "css",
+            "icon": "./images/icons/css.svg",
+            "name": "CSS"
+          },
+          {
+            "style": "javascript",
+            "icon": "./images/icons/javascript.svg",
+            "name": "JavaScript"
+          }
+        ],
+        "description": "Hardware e-commerce website associated with my business, allowing users to explore products and make purchases.",
+        "live": "https://techfusion-plus.netlify.app",
+        "type": "Website"
       },
       {
         "title": "Portfolio",
@@ -84,11 +181,72 @@
             "icon": "./images/icons/bootstrap.svg",
             "name": "Bootstrap"
           }
-          
         ],
         "description": "Displays weather information anywhere in the world.",
         "github": "https://github.com/wilberdhp/weather-dashboard",
         "live": "https://golden-medovik-5f0d0d.netlify.app"
+      },
+      {
+        "title": "Logic Exercises",
+        "image": "./images/projects-images/ejercicios-logica.webp",
+        "technologies": [
+          {
+            "style": "astro",
+            "icon": "./images/icons/Astro_dark.svg",
+            "name": "Astro"
+          },
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "Solutions to JavaScript programming logic exercises.",
+        "github": "https://github.com/wilberdhp/ejercicios-logica-web",
+        "live": "https://ejercicios-logica-javascript.netlify.app"
+      },
+      {
+        "title": "Gallery",
+        "image": "./images/projects-images/galeria.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "An image gallery. The images can be filtered by category. Clicking on an image opens a modal window with a description of the image.",
+        "github": "https://github.com/wilberdhp/galeria-react",
+        "live": "https://taupe-gaufre-cd3587.netlify.app"
+      },
+      {
+        "title": "Password Generator",
+        "image": "./images/projects-images/generador-contrasenas.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "./images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "./images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "A secure password generator. It creates strong passwords that provide greater security for your accounts.",
+        "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
+        "live": "https://generador-contrasenas-seguras.netlify.app"
       },
       {
         "title": "QR Code",
@@ -104,7 +262,6 @@
             "icon": "./images/icons/bootstrap.svg",
             "name": "Bootstrap"
           }
-          
         ],
         "description": "Generate and scan QR codes.",
         "github": "https://github.com/wilberdhp/generator-scanner-qr-code",
@@ -129,36 +286,10 @@
             "icon": "./images/icons/express.svg",
             "name": "Express"
           }
-          
         ],
         "description": "Functional contact form. WARNING: This is just an example. Do not enter personal or sensitive information.",
         "github": "https://github.com/wilberdhp/contact-form-client",
         "live": "https://contact-form-client-rosy.vercel.app"
-      },
-      {
-        "title": "Logic Exercises",
-        "image": "./images/projects-images/ejercicios-logica.webp",
-        "technologies": [
-          {
-            "style": "astro",
-            "icon": "./images/icons/Astro_dark.svg",
-            "name": "Astro"
-          },
-          {
-            "style": "react",
-            "icon": "./images/icons/react.svg",
-            "name": "React"
-          },
-          {
-            "style": "bootstrap",
-            "icon": "./images/icons/bootstrap.svg",
-            "name": "Bootstrap"
-          }
-          
-        ],
-        "description": "Solutions to JavaScript programming logic exercises.",
-        "github": "https://github.com/wilberdhp/ejercicios-logica-web",
-        "live": "https://ejercicios-logica-javascript.netlify.app"
       },
       {
         "title": "Palindrome Checker",
@@ -217,42 +348,139 @@
     "title": "Proyectos",
     "container": [
       {
-        "title": "Galería",
-        "image": "../images/projects-images/galeria.webp",
+        "title": "Secure Vault",
+        "image": "./images/projects-images/secure-vault.webp",
         "technologies": [
           {
+            "style": "tauri",
+            "icon": "./images/icons/tauri.svg",
+            "name": "Tauri"
+          },
+          {
             "style": "react",
-            "icon": "../images/icons/react.svg",
+            "icon": "./images/icons/react.svg",
             "name": "React"
           },
           {
-            "style": "bootstrap",
-            "icon": "../images/icons/bootstrap.svg",
-            "name": "Bootstrap"
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          },
+          {
+            "style": "zustand",
+            "icon": "./images/icons/zustand.svg",
+            "name": "Zustand"
+          }, 
+          {
+            "style": "sqlcipher",
+            "icon": "./images/icons/sqlite.svg",
+            "name": "SQLCipher"
           }
         ],
-        "description": "Una galería de imágenes. Las imagenes se pueden filtrar por categoría. Al hacer clic en alguna imagen se abre una ventana modal con una descripción de la imagen.",
-        "github": "https://github.com/wilberdhp/galeria-react",
-        "live": "https://taupe-gaufre-cd3587.netlify.app"
+        "description": "Aplicación segura para almacenar contraseñas, contactos y notas, con autenticación y operaciones CRUD completas.",
+        "github": "https://github.com/wilberdhp/secret-vault",
+        "type": "Aplicación de escritorio"
       },
       {
-        "title": "Generador de contraseñas",
-        "image": "../images/projects-images/generador-contrasenas.webp",
+        "title": "Gestión de tienda",
+        "image": "./images/projects-images/gestion-tienda.webp",
         "technologies": [
           {
+            "style": "electron",
+            "icon": "./images/icons/electron.svg",
+            "name": "Electron"
+          },
+          {
             "style": "react",
-            "icon": "../images/icons/react.svg",
+            "icon": "./images/icons/react.svg",
             "name": "React"
           },
           {
-            "style": "bootstrap",
-            "icon": "../images/icons/bootstrap.svg",
-            "name": "Bootstrap"
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          },         
+          {
+            "style": "sqlite",
+            "icon": "./images/icons/sqlite.svg",
+            "name": "SQLite"
           }
         ],
-        "description": "Un generador de contraseñas seguras. Crea contraseñas robustas que dan mayor seguridad a tus cuentas.",
-        "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
-        "live": "https://generador-contrasenas-seguras.netlify.app"
+        "description": "Aplicación de escritorio para gestionar tiendas o pequeños negocios, con ventas, inventario, historial y análisis.",
+        "github": "https://github.com/wilberdhp/gestion-tienda",
+        "type": "Aplicación de escritorio"
+      },
+      {
+        "title": "DHRICO Importação e Exportação",
+        "image": "./images/projects-images/dhrico.webp",
+        "technologies": [
+          {
+            "style": "next",
+            "icon": "./images/icons/nextjs.svg",
+            "name": "Next.js"
+          },
+          {
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          },
+          {
+            "style": "zustand",
+            "icon": "./images/icons/zustand.svg",
+            "name": "Zustand"
+          }
+        ],
+        "description": "Sitio web corporativo para una empresa brasileña de importación y exportación. Aumentó la visibilidad de la marca y generó más ventas.",
+        "live": "https://dhrico.vercel.app",
+        "type": "Sitio web"
+      },
+      {
+        "title": "TechFusion Cuba",
+        "image": "./images/projects-images/techfusion-cuba.webp",
+        "technologies": [
+          {
+            "style": "next",
+            "icon": "./images/icons/nextjs.svg",
+            "name": "Next.js"
+          },
+          {
+            "style": "typescript",
+            "icon": "./images/icons/typescript.svg",
+            "name": "TypeScript"
+          },
+          {
+            "style": "zustand",
+            "icon": "./images/icons/zustand.svg",
+            "name": "Zustand"
+          }
+        ],
+        "description": "Sitio web oficial de mi negocio de tecnología, enfocado en desarrollo de software y venta de hardware, mostrando la empresa en profundidad.",
+        "live": "https://techfusioncuba.vercel.app",
+        "type": "Sitio web"
+      },
+      {
+        "title": "TechFusion Plus",
+        "image": "./images/projects-images/techfusion-plus.webp",
+        "technologies": [
+          {
+            "style": "html",
+            "icon": "./images/icons/html.svg",
+            "name": "HTML"
+          },
+          {
+            "style": "css",
+            "icon": "./images/icons/css.svg",
+            "name": "CSS"
+          },
+          {
+            "style": "javascript",
+            "icon": "./images/icons/javascript.svg",
+            "name": "JavaScript"
+          }
+        ],
+        "description": "Tienda online de hardware asociada a mi negocio, permitiendo a los usuarios conocer los productos y realizar compras.",
+        "live": "https://techfusion-plus.netlify.app",
+        "type": "Sitio web"
       },
       {
         "title": "Portafolio",
@@ -297,11 +525,72 @@
             "icon": "../images/icons/bootstrap.svg",
             "name": "Bootstrap"
           }
-          
         ],
         "description": "Muestra información sobre el clima en cualquier parte del mundo.",
         "github": "https://github.com/wilberdhp/weather-dashboard",
         "live": "https://golden-medovik-5f0d0d.netlify.app"
+      },
+      {
+        "title": "Ejercicios de lógica",
+        "image": "../images/projects-images/ejercicios-logica.webp",
+        "technologies": [
+          {
+            "style": "astro",
+            "icon": "../images/icons/Astro_dark.svg",
+            "name": "Astro"
+          },
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "Soluciones de ejercicios de lógica de programación con JavaScript.",
+        "github": "https://github.com/wilberdhp/ejercicios-logica-web",
+        "live": "https://ejercicios-logica-javascript.netlify.app"
+      },
+      {
+        "title": "Galería",
+        "image": "../images/projects-images/galeria.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "Una galería de imágenes. Las imagenes se pueden filtrar por categoría. Al hacer clic en alguna imagen se abre una ventana modal con una descripción de la imagen.",
+        "github": "https://github.com/wilberdhp/galeria-react",
+        "live": "https://taupe-gaufre-cd3587.netlify.app"
+      },
+      {
+        "title": "Generador de contraseñas",
+        "image": "../images/projects-images/generador-contrasenas.webp",
+        "technologies": [
+          {
+            "style": "react",
+            "icon": "../images/icons/react.svg",
+            "name": "React"
+          },
+          {
+            "style": "bootstrap",
+            "icon": "../images/icons/bootstrap.svg",
+            "name": "Bootstrap"
+          }
+        ],
+        "description": "Un generador de contraseñas seguras. Crea contraseñas robustas que dan mayor seguridad a tus cuentas.",
+        "github": "https://github.com/wilberdhp/generador-contrasenas-seguras",
+        "live": "https://generador-contrasenas-seguras.netlify.app"
       },
       {
         "title": "Códigos QR",
@@ -317,7 +606,6 @@
             "icon": "../images/icons/bootstrap.svg",
             "name": "Bootstrap"
           }
-          
         ],
         "description": "Genera y escanea códigos qr.",
         "github": "https://github.com/wilberdhp/generator-scanner-qr-code",
@@ -342,36 +630,10 @@
             "icon": "../images/icons/express.svg",
             "name": "Express"
           }
-          
         ],
         "description": "Formulario de contacto funcional. ADVERTENCIA: esto es solo un ejemplo, no ingrese información personal o sensible.",
         "github": "https://github.com/wilberdhp/contact-form-client",
         "live": "https://contact-form-client-rosy.vercel.app"
-      },
-      {
-        "title": "Ejercicios de lógica",
-        "image": "../images/projects-images/ejercicios-logica.webp",
-        "technologies": [
-          {
-            "style": "astro",
-            "icon": "../images/icons/Astro_dark.svg",
-            "name": "Astro"
-          },
-          {
-            "style": "react",
-            "icon": "../images/icons/react.svg",
-            "name": "React"
-          },
-          {
-            "style": "bootstrap",
-            "icon": "../images/icons/bootstrap.svg",
-            "name": "Bootstrap"
-          }
-          
-        ],
-        "description": "Soluciones de ejercicios de lógica de programación con JavaScript.",
-        "github": "https://github.com/wilberdhp/ejercicios-logica-web",
-        "live": "https://ejercicios-logica-javascript.netlify.app"
       },
       {
         "title": "Verificador de Palindromos",

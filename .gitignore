@@ -27,3 +27,4 @@ pnpm-debug.log*
 #Bootstrap
 bootstrap-icons-1.11.3
 
+/notas.md

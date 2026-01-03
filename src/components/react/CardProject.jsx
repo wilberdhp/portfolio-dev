@@ -18,9 +18,9 @@ export const CardProject = ({ id, image, title, technologies, description, githu
                 )
               } else {
                 return (
-                  <div key={index} className={`technology ${style}`}>
+                  <div key={index}> {/*  className={`technology ${style}`} */}
                     <img className='technology-icon' src={icon} alt={name} loading="lazy" />
-                    <span className="technology-name">{name}</span>
+                    {/* <span className="technology-name">{name}</span> */}
                   </div>
                 )
               }
@@ -42,7 +42,7 @@ export const CardProject = ({ id, image, title, technologies, description, githu
             ) : ""
         }
         {
-          live ? (<a className="btn-links demo" href={live} target="_blank" rel="noopener noreferrer">Demo</a>) : ""
+          live ? (<a className="btn-links demo" href={live} target="_blank" rel="noopener noreferrer">Live</a>) : ""
         }
         
         

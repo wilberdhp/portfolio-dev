@@ -17,7 +17,7 @@
       }
     },
     "hero": {
-      "subtitle": "Frontend Developer",
+      "subtitle": "Software Engineer",
       "resumen": "I like to program and create innovative and efficient solutions through web development.",
       "curriculum": "./CV/cv-en/Wilber-Hernández-Resume.pdf"
     },
@@ -27,17 +27,18 @@
       "container": {
         "IAm": {
           "title": "I am",
-          "paragraph1": "I am a web developer specialized in frontend development. I enjoy innovating and learning new things.",
-          "paragraph2": "I am constantly learning and updating my knowledge about web development."
+          "paragraph1": "I am a Software Engineer with over 3 years of experience creating digital solutions and custom management systems that drive business growth. Specialized in developing high-performance web platforms using React, Next.js, and Astro, as well as robust desktop applications with Electron and Tauri, with a strong command of TailwindCSS for modern, responsive interfaces.",
+          "paragraph2": ""
         },
+         
         "education": {
           "title": "Education",
-          "paragraph1": "I learned web development self-taught through freeCodeCamp and YouTube courses from freeCodeCamp Español, HolaMundo, and midudev.",
-          "paragraph2": "Currently, I am in my second year of Informatics Engineering at the University of Camagüey \"Ignacio Agramonte y Loynaz\" (UCIAL), where I have learned Python and Java."
+          "paragraph1": "I am a self-taught Software Engineer who began my professional development through freeCodeCamp and specialized YouTube channels such as freeCodeCamp Español, HolaMundo, and midudev.",
+          "paragraph2": "Currently, I am in my third year of Informatics Engineering at the University of Camagüey “Ignacio Agramonte y Loynaz” (UCIAL), where I have strengthened my foundations in Python and Java, complementing my practical experience in modern software development."
         },
         "skills": {
           "title": "Skills",
-          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS", "React", "Astro", "Node.js", "Express", "MySQL", "Git", "ChatGPT"] 
+          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "TailwindCSS", "React", "React Native", "Next.js", "Astro", "Node.js", "Express", "Electron", "Rust", "Tauri", "MySQL", "PostgreSQL", "SQLite", "Git", "Promp Engineering", "Context Engineering", "Vibe Code Cleanup"] 
         }
       }
     },
@@ -68,7 +69,7 @@
     },
     "hero": {
       "image": "../images/hero-image.webp",
-      "subtitle": "Desarrollador Frontend",
+      "subtitle": "Ingeniero de Software",
       "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
       "curriculum": "../CV/cv-es/Wilber-Hernández-Resume.pdf"
     },
@@ -78,17 +79,17 @@
       "container": {
         "IAm": {
           "title": "Yo soy",
-          "paragraph1": "Soy un desarrollador web especializado en desarrollo frontend. Me gusta innovar y aprender cosas nuevas.",
-          "paragraph2": "Constantemente estoy aprendiendo y actualizando mis conocimientos sobre desarrollo web."
+          "paragraph1": "Soy Ingeniero de Software con más de 3 años de experiencia creando soluciones digitales y sistemas de gestión a medida que impulsan el crecimiento empresarial. Especializado en el desarrollo de plataformas web de alto rendimiento con React, Next.js y Astro, así como en aplicaciones de escritorio robustas mediante Electron y Tauri, con un sólido dominio de TailwindCSS para interfaces modernas y responsivas.",
+          "paragraph2": ""
         },
         "education": {
           "title": "Educación",
-          "paragraph1": "Aprendí desarrollo web de forma autodidacta a través de freeCodeCamp y cursos en YouTube de freeCodeCamp Español, HolaMundo y midudev.",
-          "paragraph2": "Actualmente estoy en segundo año de Ingeniería Informática en la Universidad de Camagüey \"Ignacio Agramonte y Loynaz\" (UCIAL), donde he aprendido Python y Java."
+          "paragraph1": "Soy un Ingeniero de Software autodidacta que comenzó su desarrollo profesional a través de freeCodeCamp y canales especializados de YouTube como freeCodeCamp Español, HolaMundo y midudev.",
+          "paragraph2": "Actualmente, curso el tercer año de Ingeniería Informática en la Universidad de Camagüey “Ignacio Agramonte y Loynaz” (UCIAL), donde he fortalecido mis bases en Python y Java, complementando mi experiencia práctica en desarrollo de software moderno."
         },
         "skills": {
           "title": "Habilidades",
-          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS", "React", "Astro", "Node.js", "Express", "MySQL", "Git", "ChatGPT"] 
+          "skillsArray": ["HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "TailwindCSS", "React", "React Native", "Next.js", "Astro", "Node.js", "Express", "Electron", "Rust", "Tauri", "MySQL", "PostgreSQL", "SQLite", "Git", "Ingeniería de Promp", "Ingeniería de Contexto", "Vibe Code Cleanup"] 
         }
       }
     },
