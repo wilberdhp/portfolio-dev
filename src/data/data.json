@@ -19,7 +19,7 @@
     "hero": {
       "subtitle": "Software Engineer",
       "resumen": "I like to program and create innovative and efficient solutions through web development.",
-      "curriculum": "./CV/cv-en/Wilber-Hernández-Resume.pdf"
+      "curriculum": "./CV/cv-en/Wilber-Hernández-Resume-en.pdf"
     },
     "aboutMe": {
       "initialText": "Get To Know More",
@@ -71,7 +71,7 @@
       "image": "../images/hero-image.webp",
       "subtitle": "Ingeniero de Software",
       "resumen": "Me gusta programar y crear soluciones innovadoras y eficientes a través del desarrollo web",
-      "curriculum": "../CV/cv-es/Wilber-Hernández-Resume.pdf"
+      "curriculum": "../CV/cv-es/Wilber-Delfín-Hernández-Resume-es.pdf"
     },
     "aboutMe": {
       "initialText": "Conozca más",
